@@ -1,7 +1,7 @@
 {
   "name": "Graphy",
   "version": "0.0.1",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "description": "An extension substracts the main content of the page",
   "homepage_url": "https://github.com/hydro-c/graphy",
   "icons": {
@@ -11,30 +11,16 @@
   },
   "default_locale": "en",
   "background": {
-    "page": "background.html",
-    "persistent": true
+    "scripts": ["bg.js"]
   },
   "browser_action": {
     "default_icon": "icons/icon19.png",
-    "default_title": "Read via Graphy",
-    "default_popup": "page_action.html"
+    "default_title": "Read via Graphy"
   },
-  "content_scripts": [
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "css": [
-        "css/inject.css"
-      ]
-    },
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "js": [
-        "js/inject.js"
-      ]
-    }
+  "permissions": [
+    "background",
+    "tabs",
+    "https://*/*",
+    "http://*/*"
   ]
 }
