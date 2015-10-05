@@ -1,7 +1,7 @@
 /* 
  *  License 1
  * 
- *	Graphy, A project by Arthur Zheng, developed based on Readibility
+ *	Graphy, A project by Arthur Zheng, developed based on Arc90's project: Readibility
  *	Website:	?
  *	Source:		https://github.com/hydro-c/graphy
  *	
